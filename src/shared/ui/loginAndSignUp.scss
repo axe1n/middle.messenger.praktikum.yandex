@@ -1,0 +1,20 @@
+.loginAndSingUp {
+  width: 340px;
+  padding: 30px;
+
+  &__text {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  &__button {
+    margin-top: 160px;
+    margin-bottom: 14px;
+
+    &_signUp {
+      margin-top: 20px;
+    }
+  }
+}

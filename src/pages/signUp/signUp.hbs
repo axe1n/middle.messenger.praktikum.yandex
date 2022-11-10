@@ -1,0 +1,35 @@
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8' />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <title>Sign Up</title>
+    <link rel='stylesheet' href='/index.scss' />
+</head>
+
+<body>
+    <main>
+        <div class='loginAndSingUp frame'>
+            <div class='loginAndSingUp__text inputForm__text'>Регистрация</div>
+            <form class='loginAndSingUp__form inputForm' action='#'>
+                <label class='inputForm__label' for='login'>Логин</label>
+                <input class='inputForm__input' type='text' name='login' value='' placeholder='ivanivanov' />
+                <label class='inputForm__label' for='email'>Почта</label>
+                <input class='inputForm__input' type='email' name='email' value='' placeholder='fedor99@ya.ru' />
+                <label class='inputForm__label' for='password'>Пароль</label>
+                <input class='inputForm__input' type='password' name='password' value='' placeholder='••••••••••••' />
+                <label class='inputForm__label' for='first_name'>Имя</label>
+                <input class='inputForm__input' type='text' name='first_name' value='' placeholder='Федор' />
+                <label class='inputForm__label' for='second_name'>Фамилия</label>
+                <input class='inputForm__input' type='text' name='second_name' value='' placeholder='Чистяков' />
+                <label class='inputForm__label' for='password'>Телефон</label>
+                <input class='inputForm__input' type='phone' name='password' value='' placeholder='212-85-06' />
+            </form>
+            <button class='loginAndSingUp__button loginAndSingUp__button_signUp button'>Зарегистрироваться</button>
+            <a class='link' href='/src/pages/login/login.hbs'>Войти</a>
+        </div>
+    </main>
+</body>
+
+</html>

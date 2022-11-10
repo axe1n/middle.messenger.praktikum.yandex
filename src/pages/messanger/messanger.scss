@@ -1,0 +1,107 @@
+.messager {
+  display: grid;
+  min-height: 100%;
+  width: 100%;
+  grid-template-columns: 0.5fr 1fr 1fr;
+  grid-template-rows: 0.13fr 1fr 0.2fr;
+  grid-template-areas:
+    'chatList    header         header'
+    'chatList    messages       messages '
+    'chatList   sendMessage  sendMessage';
+
+  &__chatList {
+    grid-area: chatList;
+    background-color: $backgroundMain;
+    border-right: 1px solid $border;
+    padding: 10px;
+  }
+
+  &__buttonWrapper {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__profile {
+    font-size: 12px;
+    line-height: 12px;
+    color: $gray;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  &__search {
+    text-align: center;
+    margin-top: 14px;
+    margin-bottom: 14px;
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  &__contact {
+    display: flex;
+    gap: 10px;
+    padding-top: 12px;
+    border-top: 1px solid $border;
+    cursor: pointer;
+  }
+
+  &__contactInfo {
+    display: flex;
+    align-items: center;
+  }
+
+  &__header {
+    grid-area: header;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid $border;
+  }
+
+  &__headerContactInfo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__contactManagementButton {
+    background: transparent;
+    cursor: pointer;
+  }
+
+  &__messages {
+    grid-area: messages;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+
+  &__message {
+    padding: 10px;
+    font-size: 12px;
+    line-height: 15px;
+    border-radius: 10px;
+
+    &_my {
+      align-self: flex-end;
+      background-color: $backgroundMyMessage;
+    }
+
+    &_contact {
+      align-self: flex-start;
+      background-color: $backgroundContactMessage;
+    }
+  }
+
+  &__sendMessage {
+    grid-area: sendMessage;
+  }
+}

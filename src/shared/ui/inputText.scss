@@ -1,0 +1,12 @@
+.inputText {
+  width: 100%;
+  background-color: $lightGray;
+  padding: 10px 0;
+  border-radius: 5px;
+
+  &::placeholder {
+    font-size: 12px;
+    line-height: 12px;
+    color: $gray;
+  }
+}

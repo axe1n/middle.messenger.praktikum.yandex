@@ -1,0 +1,56 @@
+---
+{
+contacts: [Коля, Саша, Андрей, Вика, Настя]
+}
+---
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Messager</title>
+    <link rel="stylesheet" href="/index.scss" />
+</head>
+
+<body>
+    <main>
+        <div class="messager">
+            <div class="messager__chatList">
+                <div class="messager__buttonWrapper">
+                    <button class="messager__profile">
+                        Профиль <img src="/src/shared/assets/arrow.svg" alt="arrow" />
+                    </button>
+                </div>
+                <input class="messager__search inputText" placeholder="Поиск"></input>
+                <div class="messager__contacts">
+                    {{#each contacts}}
+                    <div class="messager__contact">
+                        <img class="messager__avatar" src="/src/shared/assets/avatar.svg" alt="avatar" />
+                        <div class="messager__contactInfo">{{this}}</div>
+                    </div>
+                    {{/each}}
+                </div>
+            </div>
+            <div class="messager__header">
+                <div class="messager__headerContactInfo">
+                    <img class="messager__avatar" src="/src/shared/assets/avatar.svg" alt="avatar" />
+                    <div class="">Коля</div>
+                </div>
+                <button class="messager__contactManagementButton"><img
+                        src="/src/shared/assets/contactManagementIcon.svg" alt="contact management"></button>
+            </div>
+            <div class="messager__messages">
+                <div class="messager__message messager__message_my">Привет</div>
+                <div class="messager__message messager__message_contact">Пока</div>
+            </div>
+            <div class="messager__sendMessage">asdlkllnnl</div>
+        </div>
+    </main>
+</body>
+
+</html>
