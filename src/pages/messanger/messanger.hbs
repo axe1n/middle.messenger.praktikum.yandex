@@ -26,7 +26,7 @@ contacts: [Коля, Саша, Андрей, Вика, Настя]
                         Профиль <img src="/src/shared/assets/arrow.svg" alt="arrow" />
                     </button>
                 </div>
-                <input class="messager__search inputText" placeholder="Поиск"></input>
+                <input class="messager__search inputText" placeholder="Поиск" />
                 <div class="messager__contacts">
                     {{#each contacts}}
                     <div class="messager__contact">
@@ -48,8 +48,12 @@ contacts: [Коля, Саша, Андрей, Вика, Настя]
                 <div class="messager__message messager__message_my">Привет</div>
                 <div class="messager__message messager__message_contact">Пока</div>
             </div>
-            <div class="messager__sendMessage">asdlkllnnl</div>
-        </div>
+            <div class="messager__sendMessage">
+                <button class="messager__sendDocument"><img src="/src/shared/assets/addIcon.svg"
+                        alt="send document"></button>
+                <input class="inputText" placeholder="Сообщение" /><button class="messager__send"><img
+                        src="/src/shared/assets/sendMessageIcon.svg" alt="send message"></button>
+            </div>
     </main>
 </body>
 

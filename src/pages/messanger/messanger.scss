@@ -2,8 +2,8 @@
   display: grid;
   min-height: 100%;
   width: 100%;
-  grid-template-columns: 0.5fr 1fr 1fr;
-  grid-template-rows: 0.13fr 1fr 0.2fr;
+  grid-template-columns: 310px 1fr 1fr;
+  grid-template-rows: 86px 1fr 86px;
   grid-template-areas:
     'chatList    header         header'
     'chatList    messages       messages '
@@ -103,5 +103,22 @@
 
   &__sendMessage {
     grid-area: sendMessage;
+    border-top: 1px solid $border;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+  }
+
+  &__sendDocument {
+    background: transparent;
+    cursor: pointer;
+  }
+
+  &__send {
+    background-color: transparent;
+    cursor: pointer;
   }
 }
