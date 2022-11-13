@@ -59,7 +59,8 @@
 
   &__header {
     grid-area: header;
-    padding: 10px 20px;
+    padding: 10px 0;
+    margin: 0 10px;
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid $border;
