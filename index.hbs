@@ -2,20 +2,29 @@
 id: "root"
 ---
 
-
-<!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset='UTF-8' />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
     <title>Best Messeger</title>
-    <script src="src/index.js" type="module"></script>
+    <link rel="stylesheet" href="/index.scss" />
+    <script src='src/index.js' type='module'>
+    </script>
 </head>
 
 <body>
-    <div id="root"></div>
+    <div id='root'>
+        <main>
+            <a href="src/pages/login/login.hbs">Login</a>
+            <a href="src/pages/signUp/signUp.hbs">SignUp</a>
+            <a href="src/pages/messanger/messanger.hbs">Messanger</a>
+            <a href="src/pages/profile/profile.hbs">Profile</a>
+            <a href="src/pages/error404/error404.hbs">Error404</a>
+            <a href="src/pages/error500/error500.hbs">Error500</a>
+        </main>
+    </div>
 </body>
 
 </html>

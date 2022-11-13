@@ -1,7 +1,7 @@
-"use strict"
+// 'use strict';
 
-import { sum } from "./shared/lib";
+// import { sum } from './shared/lib';
 
-const root = document.querySelector('#root');
+// const root = document.querySelector('#root');
 
-root.textContent = sum(6, -1).toString();
+// root.innerHTML = sum(6, -1).toString();
