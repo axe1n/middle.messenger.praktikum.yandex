@@ -12,19 +12,11 @@
   "devDependencies": {
     "@anikin/parcel-transformer-handlebars": "1.0.9",
     "@parcel/transformer-sass": "2.8.0",
-<<<<<<< HEAD
-    "parcel": "2.8.0"
-  },
-  "dependencies": {
-    "express": "4.18.2",
-    "sass": "1.56.1"
-=======
     "parcel": "2.8.0",
     "sass": "1.56.1"
   },
   "dependencies": {
     "express": "4.18.2"
->>>>>>> deploy
   },
   "engines": {
     "node": "16.17.0",
