@@ -6,6 +6,6 @@ const PORT = 3000;
 app.use(express.static('./dist'));
 
 app.listen(process.env.PORT || PORT, function () {
-  console.log(process.env);
+  console.log(process.env.PORT);
   console.log(`Example app listening on port ${process.env.PORT || PORT}!`);
 });
