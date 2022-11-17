@@ -532,10 +532,8 @@ function hmrAcceptRun(bundle, id) {
 }
 
 },{}],"8lqZg":[function(require,module,exports) {
-// 'use strict';
-// import { sum } from './shared/lib';
-// const root = document.querySelector('#root');
-// root.innerHTML = sum(6, -1).toString();
+"use strict";
+const root = document.querySelector("#root");
 
 },{}]},["ShInH","8lqZg"], "8lqZg", "parcelRequire2efa")
 
