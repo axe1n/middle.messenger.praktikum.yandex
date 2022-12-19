@@ -1,3 +1,3 @@
-"use strict"
+'use strict';
 
-export { sum } from "./sum/sum" 
+export { sum } from './sum/sum';

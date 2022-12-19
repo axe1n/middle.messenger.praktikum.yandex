@@ -1,0 +1,100 @@
+.profile {
+  display: grid;
+  min-height: 100%;
+  width: 100%;
+  grid-template-columns: 64px 100%;
+  grid-template-areas:
+    'side   main'
+    'side   main'
+    'side   main';
+
+  &__side {
+    grid-area: side;
+    background-color: $backgroundSecond;
+    border-right: 1px solid $border;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__arrowBack {
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  &__main {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 385px;
+  }
+
+  &__avatar {
+    width: 130px;
+    height: 130px;
+    background-color: $lightGray;
+    border-radius: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__name {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+  }
+
+  &__list {
+    width: 100%;
+    list-style-type: none;
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid $border;
+  }
+
+  &__key {
+    font-size: 13px;
+    line-height: 13px;
+  }
+
+  &__value {
+    font-size: 13px;
+    line-height: 13px;
+    color: $gray;
+  }
+
+  &__settings {
+    width: 100%;
+    margin-top: 60px;
+  }
+
+  &__setting {
+    width: 100%;
+    text-align: left;
+    display: block;
+    padding: 10px 0;
+    border-bottom: 1px solid $border;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  &__exit {
+    display: block;
+    width: 100%;
+    text-align: left;
+    margin-top: 10px;
+    color: $red;
+    font-size: 13px;
+    line-height: 13px;
+    background-color: transparent;
+    cursor: pointer;
+  }
+}

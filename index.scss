@@ -1,0 +1,39 @@
+@import 'src/shared/styles/index.scss';
+@import 'src/pages/messanger/messanger.scss';
+@import 'src/pages/profile/profile.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+input {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: 'inter', sans-serif;
+}

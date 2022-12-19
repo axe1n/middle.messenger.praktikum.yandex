@@ -2,16 +2,24 @@
   "name": "bestmesseger",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "dev": "parcel index.hbs",
-    "build": "parcel build index.hbs"
+    "dev": "parcel ./index.hbs",
+    "build": "parcel build ./index.hbs"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@anikin/parcel-transformer-handlebars": "^1.0.9",
-    "parcel": "^2.8.0"
+    "@anikin/parcel-transformer-handlebars": "1.0.9",
+    "@parcel/transformer-sass": "2.8.0",
+    "parcel": "2.8.0",
+    "sass": "1.56.1"
+  },
+  "dependencies": {
+    "express": "4.18.2"
+  },
+  "engines": {
+    "node": "16.17.0",
+    "npm": "8.15.0"
   }
 }
